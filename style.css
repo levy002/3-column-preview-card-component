@@ -1,72 +1,68 @@
 body {
-    box-sizing: border-box;
-    font-size: 15px;
-    font-family: Lexend Deca;
-    font-weight: 400;
-    font-family: Big Shoulders Display;
-    align-content:center;
-    padding: 100px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-family: Big Shoulders Display;
+  align-content: center;
+  padding: 100px;
 }
 .containers {
-    display:flex;
-    flex-direction: row;
-    align-content: center;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
-.container-1{
-    display:flex;
-    flex-direction: column;
-    background-color: hsl(31,77%,52%);
-    padding: 2.5em;
-    
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(31, 77%, 52%);
+  padding: 2.5em;
 }
-.container-2{
-    display: flex;
-    flex-direction: column;
-    background-color: hsl(184,100%,22%);
-    padding: 2.5em;
-    
+.container-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(184, 100%, 22%);
+  padding: 2.5em;
 }
-.container-3{
-    display:flex;
-    flex-direction: column;
-    background-color: hsl(179,100%,13%);
-    padding: 2.5em;
+.container-3 {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(179, 100%, 13%);
+  padding: 2.5em;
 }
 button {
-    align-self: flex-start;
-    border-radius: 25px;
-    padding:1em;
-    font-size:1em;
-    border: hidden;
-    
+  align-self: flex-start;
+  border-radius: 25px;
+  padding: 1em;
+  font-size: 1em;
+  border: hidden;
 }
-.containers p{
-    color: hsla(0, 0%, 100%, 0.75);
-    padding-bottom: 50px ;
-
+.containers p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-bottom: 50px;
 }
-.containers h1{
-    color: hsl(0, 0%, 95%);
-    padding: 8px;
+.containers h1 {
+  color: hsl(0, 0%, 95%);
+  padding: 8px;
 
-    font-size: 25px;
+  font-size: 25px;
 }
 #btn-1:hover {
-    color:hsl(31,77%,52%);
+  color: hsl(31, 77%, 52%);
 }
 #btn-2:hover {
-    color: hsl(184,100%,22%);
+  color: hsl(184, 100%, 22%);
 }
 #btn-3:hover {
-    color: hsl(179,100%,13%);
+  color: hsl(179, 100%, 13%);
 }
 img {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 @media only screen and (max-width: 376px) {
-    .containers {
-        flex-direction: column;
-    }
+  .containers {
+    flex-direction: column;
+  }
 }
