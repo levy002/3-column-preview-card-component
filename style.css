@@ -5,30 +5,33 @@ body {
   font-weight: 400;
   font-family: Big Shoulders Display;
   align-content: center;
-  padding: 100px;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
 }
 .containers {
   display: flex;
-  flex-direction: row;
-  align-content: center;
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
 }
-.container-1 {
+.container {
   display: flex;
   flex-direction: column;
+  padding: 2.5em;
+  width: 30%;
+}
+.orange {
   background-color: hsl(31, 77%, 52%);
-  padding: 2.5em;
 }
-.container-2 {
-  display: flex;
-  flex-direction: column;
+.light-green {
   background-color: hsl(184, 100%, 22%);
-  padding: 2.5em;
 }
-.container-3 {
-  display: flex;
-  flex-direction: column;
+.dark-green {
   background-color: hsl(179, 100%, 13%);
-  padding: 2.5em;
 }
 button {
   align-self: flex-start;
@@ -39,7 +42,11 @@ button {
 }
 .containers p {
   color: hsla(0, 0%, 100%, 0.75);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
 }
 .containers h1 {
   color: hsl(0, 0%, 95%);
@@ -47,13 +54,13 @@ button {
 
   font-size: 25px;
 }
-#btn-1:hover {
+#btn-1 {
   color: hsl(31, 77%, 52%);
 }
-#btn-2:hover {
+#btn-2 {
   color: hsl(184, 100%, 22%);
 }
-#btn-3:hover {
+#btn-3 {
   color: hsl(179, 100%, 13%);
 }
 img {
@@ -64,5 +71,9 @@ img {
 @media only screen and (max-width: 375px) {
   .containers {
     flex-direction: column;
+    height: unset;
+  }
+  .container {
+    width: 100%;
   }
 }
