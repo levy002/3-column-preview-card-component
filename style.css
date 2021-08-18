@@ -1,14 +1,11 @@
 body {
   box-sizing: border-box;
-  font-size: 15px;
-  font-family: Lexend Deca;
-  font-weight: 400;
-  font-family: Big Shoulders Display;
   align-content: center;
   margin: 0;
 }
 * {
   box-sizing: border-box;
+  
 }
 .containers {
   display: flex;
@@ -17,28 +14,34 @@ body {
   align-items: center;
   height: 100vh;
   justify-content: center;
+
 }
 .container {
   display: flex;
   flex-direction: column;
   padding: 2.5em;
-  width: 30%;
+  width: 25%;
 }
 .orange {
   background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px
 }
 .light-green {
   background-color: hsl(184, 100%, 22%);
 }
 .dark-green {
   background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 button {
   align-self: flex-start;
   border-radius: 25px;
-  padding: 1em;
-  font-size: 1em;
+  padding: 8px 25Px;
+  font-size: 15px;
   border: hidden;
+  font-family: Lexend Deca;
 }
 .containers p {
   color: hsla(0, 0%, 100%, 0.75);
@@ -47,12 +50,14 @@ button {
   -webkit-line-clamp: 4;
   overflow: hidden;
   -webkit-box-orient: vertical;
+  font-family: Lexend Deca;
+
 }
 .containers h1 {
   color: hsl(0, 0%, 95%);
   padding: 8px;
-
-  font-size: 25px;
+  font-family: Big Shoulders Display;
+  font-size: 30px;
 }
 #btn-1 {
   color: hsl(31, 77%, 52%);
@@ -63,8 +68,23 @@ button {
 #btn-3 {
   color: hsl(179, 100%, 13%);
 }
+#btn-1:hover{
+  background-color: transparent;
+  color:white;
+  border:1px solid white;
+}
+#btn-2:hover{
+  background-color: transparent;
+  color:white;
+  border:1px solid white;
+}
+#btn-3:hover{
+  background-color: transparent;
+  color:white;
+  border:1px solid white;
+}
 img {
-  width: 60px;
+  width: 80px;
   height: 60px;
 }
 
@@ -74,6 +94,5 @@ img {
     height: unset;
   }
   .container {
-    width: 100%;
-  }
+    width: 100%;}
 }
