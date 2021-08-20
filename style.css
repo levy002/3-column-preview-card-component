@@ -89,10 +89,28 @@ img {
 }
 
 @media only screen and (max-width: 375px) {
+  
+  body {
+    margin:15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .containers {
     flex-direction: column;
     height: unset;
   }
   .container {
     width: 100%;}
+    .dark-green {
+      background-color: hsl(179, 100%, 13%);
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+    }
+    .orange {
+      background-color: hsl(31, 77%, 52%);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 0;
+    }
 }
